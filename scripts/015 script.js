@@ -16,42 +16,60 @@
 
 // Код возьмите из предыдущего домашнего задания
 
-// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '')
 
-// const personalMovieDB = {
-//       count: numberOfFilms,
-//       movies: {},
-//       acators: {},
-//       genres: [],
-//       privat: false
-// }
+const personalMovieDB = {
+      count: numberOfFilms,
+      movies: {},
+      acators: {},
+      genres: [],
+      privat: false
+}
 
-// while ()
 
-// for (let i = 0; i < 2; i++) {
-//       const a = prompt('Один из посмотренныъ фильмов?', ''),
-//             b = prompt('оцените фильм?','');
 
-//       if (a !=null && b != null && a != '' && b != '' && a.length < 50) {
-//             personalMovieDB.movies[a] = b;
-//             console.log('done')
-//       }else {
-//             console.log('Error')
-//             i--;
-//       }
+for (let i = 0; i < 2; i++) {
+      const a = prompt('Один из посмотренныъ фильмов?', ''),
+            b = prompt('оцените фильм?','');
+
+      if (a !=null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done')
+      }else {
+            console.log('Error')
+            i--;
+      }
       
-//        personalMovieDB.movies[a] = b;
-// }
+       personalMovieDB.movies[a] = b;
+}
 
-// if (personalMovieDB.count < 10) {
-//       console.log('Мало фильмов')
-// } else if (personalMovieDB.count  >= 10 && personalMovieDB.count < 30) {
-//       console.log('Not bad')
-// } else if (personalMovieDB.count >= 30) {
-//       console.log('Вы киноман')
-// } else {
-//       console.log('Что-то пошло не так')
-// }
+if (personalMovieDB.count < 10) {
+      console.log('Мало фильмов')
+} else if (personalMovieDB.count  >= 10 && personalMovieDB.count < 30) {
+      console.log('Not bad')
+} else if (personalMovieDB.count >= 30) {
+      console.log('Вы киноман')
+} else {
+      console.log('Что-то пошло не так')
+}
 
 
-// console.log(personalMovieDB)
+console.log(personalMovieDB)
+
+let i = 0;
+
+while (i < 2) {
+      i++;
+      const a = prompt('Один из посмотренныъ фильмов?', ''),
+            b = prompt('оцените фильм?','');
+
+      if (a !=null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDB.movies[a] = b;
+            console.log('done')
+      }else {
+            console.log('Error')
+            i--;
+      }
+}
+
+
